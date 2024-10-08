@@ -52,18 +52,19 @@ a:hover {
 
 /* Styles pour le bouton de retour */
 .btn {
+    display: inline-block;
     background-color: #4c7a4c; /* Couleur de fond */
     color: #ffffff; /* Couleur du texte */
     border: none; /* Pas de bordure */
     border-radius: 5px; /* Coins arrondis */
     padding: 10px 20px; /* Espacement intérieur */
     font-size: 1em; /* Taille de la police */
-    cursor: pointer; /* Curseur en forme de main */
+    text-align: center; /* Centrage du texte */
     transition: background-color 0.3s ease; /* Transition pour l'effet hover */
 }
 
-/* Effet hover du bouton */
-.btn:hover {
+/* Effet hover du bouton de retour */
+.btn {
     background-color: #5ca65c; /* Couleur de fond au survol */
 }
 
