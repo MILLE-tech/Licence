@@ -8,6 +8,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+    overflow: hidden;
 }
 
 /* Conteneur principal */
@@ -18,6 +20,19 @@ body {
     border-radius: 10px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
     width: 300px;
+    z-index: 1;
+    position: relative;
+    animation: float 3s ease-in-out infinite;
+}
+
+/* Effet de flottement */
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0); /* Position de départ */
+    }
+    50% {
+        transform: translateY(-15px); /* Monte légèrement */
+    }
 }
 
 /* Titre principal */
@@ -32,7 +47,7 @@ h1 {
 
 /* Liens */
 a {
-    color: #c0c0c0; /* Couleur des liens en gris clair */
+    color: #c0c0c0;
     font-size: 1.1em;
     text-decoration: none;
     display: block;
@@ -45,9 +60,33 @@ a {
 
 /* Effet hover des liens */
 a:hover {
-    background-color: #2e2e2e; /* Arrière-plan au survol */
-    color: #c0c0c0; /* Reste en gris clair */
-    border-color: #4c7a4c; /* Bordure verte très foncée au survol */
+    background-color: #2e2e2e;
+    color: #c0c0c0;
+    border-color: #4c7a4c;
+}
+
+/* Styles pour les bulles */
+.bubble {
+    position: absolute;
+    bottom: 0;
+    width: 20px;
+    height: 20px;
+    background-color: rgba(0, 255, 127, 0.8);
+    border-radius: 50%;
+    animation: rise 4s linear forwards;
+    z-index: 0;
+}
+
+/* Animation de montée des bulles */
+@keyframes rise {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-100vh);
+        opacity: 0;
+    }
 }
 
 /* Adaptation mobile */
