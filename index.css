@@ -80,7 +80,7 @@ a:hover {
     bottom: 0;
     width: 20px;
     height: 20px;
-    background-color: rgba(0, 255, 127, 0.8);
+    background-color: rgba(247, 0, 255, 0.8);
     border-radius: 50%;
     animation: rise 4s linear forwards;
     z-index: 0;

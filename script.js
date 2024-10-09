@@ -18,10 +18,6 @@ function createBubble() {
     const x = Math.random() * window.innerWidth;
     bubble.style.left = `${x}px`;
 
-    // Appliquer une couleur aléatoire dans la gamme de gris
-    const randomGray = getRandomGrayColor();
-    bubble.style.backgroundColor = randomGray;
-
     // Appliquer une taille aléatoire à la bulle
     const randomSize = getRandomSize();
     bubble.style.width = `${randomSize}px`;
